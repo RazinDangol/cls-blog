@@ -9,13 +9,15 @@
             <th class='bg-primary'>Title</th>
             <th class='bg-primary'>Content</th>
             <th class='bg-primary'>Published Date</th>
+            <th class='bg-primary'>Author</th>
         </tr>
         {% for blog in blogs %}
         <tr>
             <td>{{blog.Title}}</td>
             <td>{{blog.content}}</td>
+            <td>{{blog.Name}}</td>
             <td>{{blog.pub_date}}</td>
-        </tr>
+            </tr>
     {% endfor %}
     </table>
 </div>
