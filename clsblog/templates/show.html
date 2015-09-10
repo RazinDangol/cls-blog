@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class= 'table-responsive'>
+    <h2>List of blogs</h2>
+
+    <table class ='table table-bordered table-hover'>
+        <tr>
+            <th class='bg-primary'>Title</th>
+            <th class='bg-primary'>Content</th>
+            <th class='bg-primary'>Published Date</th>
+        </tr>
+        {% for blog in blogs %}
+        <tr>
+            <td>{{blog.Title}}</td>
+            <td>{{blog.content}}</td>
+            <td>{{blog.pub_date}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+</div>
+{% endblock %}
