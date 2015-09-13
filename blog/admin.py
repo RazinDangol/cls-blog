@@ -6,8 +6,8 @@ from .models import Comment
 
 
 class BlogAdmin(admin.ModelAdmin):
-    fields = ("Name", "Email", "Title", "content",)
-    list_display = ('upper_case_name', "content", "Email", "Title",'pub_date','edited_date',)
+    fields = ("name", "email", "title", "content",)
+    list_display = ('upper_case_name', "content", "email", "title",'pub_date','edited_date',)
 
     def upper_case_name(self, obj):
         return obj.Name.upper()

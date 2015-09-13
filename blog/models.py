@@ -6,9 +6,9 @@ from django.utils import timezone
 
 
 class Blog(models.Model):
-    Name = models.CharField(max_length=30)
-    Email = models.EmailField()
-    Title = models.CharField(max_length=30)
+    name = models.CharField(max_length=30)
+    email = models.EmailField()
+    title = models.CharField(max_length=30)
     content = models.TextField()
     pub_date = models.DateTimeField(auto_now_add=True)
     edited_date=models.DateTimeField(auto_now=True)
